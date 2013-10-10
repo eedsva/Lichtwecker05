@@ -14,7 +14,7 @@ const int fadetime = 500;
 int dim = 0;      // startvalue for leds -> dark
 int dimmax = 248; // max brightness led 
 int inc = 8;      // increase of LED
-boolean light = false; // light switch
+boolean light = false; // light switch bool
 
 void setup()
 {
