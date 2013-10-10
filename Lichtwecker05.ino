@@ -14,16 +14,16 @@ const int fadetime = 500;
 int dim = 0;      // startvalue for leds -> dark
 int dimmax = 248; // max brightness led 
 int inc = 8;      // increase of LED
-boolean light = false;
+boolean light = false; // light switch
 
 void setup()
 {
   Serial.begin(9600);
   lcd.begin(16, 2); 
-  setTime(22,30,55,10,7,13); // set time to Saturday 20:33:00am 30.09.2013
+  setTime(21,55,15,10,7,13); // set time to Saturday 20:33:00am 30.09.2013
 
   // create the alarms 
-  Alarm.alarmRepeat(22,31,0, MorningAlarm);  // 20:34 every day
+  Alarm.alarmRepeat(6,25,0, MorningAlarm);  // 20:34 every day
   Alarm.timerRepeat(1, lcdDisplay);      // display time every sec
   
   // lcd alarm
